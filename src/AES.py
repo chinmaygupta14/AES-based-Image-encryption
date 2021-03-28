@@ -279,8 +279,11 @@ def encrypt():
     print("Encrypted matrix:")
     print(cipher[10])
     #converting the array to an encrypted image
+    #converting the array to an encrypted image
     Image.fromarray(im).show()
-    Image.fromarray(im).save('encrypted.png')
+    imgg=Image.fromarray(im)
+    cv2.imwrite('encrypted.png',np.float32(imgg))
+   
    
     #print(cipher[10])
 
